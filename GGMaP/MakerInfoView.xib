@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MakerInfoView" customModule="GGMaP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-Ce-de1">
+                    <rect key="frame" x="8" y="14" width="67" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92x-hV-mqh">
+                    <rect key="frame" x="8" y="49" width="66" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-he-wPM">
+                    <rect key="frame" x="88" y="14" width="67" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukp-yu-eHE">
+                    <rect key="frame" x="90" y="49" width="66" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="92x-hV-mqh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="D20-gn-RrE"/>
+                <constraint firstItem="ldQ-Ce-de1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="HsD-KN-TDJ"/>
+                <constraint firstAttribute="bottom" secondItem="92x-hV-mqh" secondAttribute="bottom" constant="11" id="Qk1-ZC-xhE"/>
+                <constraint firstItem="Ukp-yu-eHE" firstAttribute="leading" secondItem="92x-hV-mqh" secondAttribute="trailing" constant="16" id="V7L-DD-cIj"/>
+                <constraint firstItem="RaC-he-wPM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="ro2-Fg-9eB"/>
+                <constraint firstAttribute="bottom" secondItem="Ukp-yu-eHE" secondAttribute="bottom" constant="11" id="uIr-Jv-9gj"/>
+                <constraint firstItem="RaC-he-wPM" firstAttribute="leading" secondItem="ldQ-Ce-de1" secondAttribute="trailing" constant="13" id="wiI-tJ-gtK"/>
+                <constraint firstItem="ldQ-Ce-de1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zbL-tU-cHg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="distance" destination="Ukp-yu-eHE" id="0pC-Tv-p7J"/>
+                <outlet property="duration" destination="RaC-he-wPM" id="CL0-nz-0sz"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="89.5"/>
+        </view>
+    </objects>
+</document>

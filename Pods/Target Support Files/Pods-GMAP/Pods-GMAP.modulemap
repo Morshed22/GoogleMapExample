@@ -1,0 +1,6 @@
+framework module Pods_GMAP {
+  umbrella header "Pods-GMAP-umbrella.h"
+
+  export *
+  module * { export * }
+}
